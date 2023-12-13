@@ -35,6 +35,7 @@ public class Server {
             ServerSocket serverSocket = new ServerSocket(Integer.parseInt(args[0]));
             // PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
             // BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+            System.out.println("Server started. Connect to begin playing!");
 
             while (true) {
                 Socket clientSocket = serverSocket.accept();
